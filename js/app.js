@@ -157,6 +157,13 @@
             console.log("end");
         }
     });
+    const lastAudio = document.querySelector(".last-tracks__audio");
+    lastAudio.querySelector(".last-tracks");
+    new Audio(lastAudio, {
+        onend: e => {
+            console.log("end");
+        }
+    });
     function initSliders() {
         if (document.querySelector(".swiper")) new Swiper(".swiper", {
             slidesPerView: 3,
@@ -184,12 +191,17 @@
                 1268: {
                     slidesPerView: 3
                 }
-            },
-            on: {}
+            }
         });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
+    }));
+    const burger = document.querySelector(".header__burger");
+    const menuBody = document.querySelector(".header__menu");
+    if (burger) burger.addEventListener("click", (function(e) {
+        burger.classList.toggle("_menu-active");
+        menuBody.classList.toggle("_menu-active");
     }));
     window["FLS"] = true;
     isWebp();

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220628070145">
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220628070145">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220629192117">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220629192117">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,36 +17,36 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<div class="header__row">
+				<div class="header__body">
 					<a href="#" target="_blank" class="header__logo logo">
 						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
 					</a>
-
+					<div class="header__burger">
+						<span></span>
+					</div>
 					<nav class="header__menu">
 						<ul class="header__items">
 							<li class="header__item">
-								<a href="#">About</a>
+								<a class="heder__link" href="#">About</a>
 							</li>
 							<li class="header__item">
-								<a href="#">News</a>
+								<a class="heder__link" href="#">News</a>
 							</li>
 							<li class="header__item">
-								<a href="#">Music</a>
+								<a class="heder__link" class="heder__link" href="#">Music</a>
 							</li>
 							<li class="header__item">
-								<a href="#">Media</a>
+								<a class="heder__link" href="#">Media</a>
 							</li>
 							<li class="header__item">
-								<a href="#">Tours</a>
+								<a class="heder__link" href="#">Tours</a>
 							</li>
 							<li class="header__item">
-								<a href="#">Contacts</a>
+								<a class="heder__link" href="#">Contacts</a>
 							</li>
 						</ul>
 					</nav>
-					<div class="icon-menu">
-						<span></span>
-					</div>
+
 				</div>
 			</div>
 		</header>
@@ -193,25 +193,35 @@
 									<span class="audio__current">1</span>
 									<span class="audio__total">1</span>
 								</div>
-								<audio src="files/01.mp3" controls></audio>
+								<audio id="audio" class="last-tracks" src="files/04.mp3" controls>
+								</audio>
 							</div>
-							<div class="last-tracks__list">
-								<ol class="last-tracks__tracks">
-									<li class="last-tracks__track _active"><a href="files/01.mp3">3LAU, Bright Lights — How You
-											Love Me</a></li>
-									<li class="last-tracks__track"><a href="files/01.mp3">Bright Lights, Kaleena Zanders, Kandy —
-											War For Love
-										</a></li>
-									<li class="last-tracks__track"><a href="files/01.mp3">Pink Is Punk, Benny Benassi, Bright
-											Lights — Ghost</a></li>
-									<li class="last-tracks__track"><a href="files/01.mp3">Hardwell, Dyro, Bright Lights — Never
-											Say Goodbye</a></li>
-									<li class="last-tracks__track"><a href="files/01.mp3">Zeds Dead, Dirtyphonics, Bright Lights
-											— Where Are You Now</a></li>
-									<li class="last-tracks__track"><a href="files/01.mp3">Zedd, Bright Lights — Follow You Down
-										</a></li>
-								</ol>
-							</div>
+							<ol class="last-tracks__tracks" id="playlist">
+								<li class="last-tracks__track">
+									<a href="files/06.mp3">3LAU, Bright Lights — How You Love Me</a>
+								</li>
+								<li class="last-tracks__track">
+									<a href="files/02.mp3">Bright Lights, Kaleena Zanders, Kandy —
+										War For Love
+									</a>
+								</li>
+								<li class="last-tracks__track">
+									<a href="files/03.mp3">Pink Is Punk, Benny Benassi, Bright
+										Lights — Ghost</a>
+								</li>
+								<li class="last-tracks__track">
+									<a href="files/04.mp3">Hardwell, Dyro, Bright Lights — Never
+										Say Goodbye</a>
+								</li>
+								<li class="last-tracks__track">
+									<a href="files/05.mp3">Zeds Dead, Dirtyphonics, Bright Lights
+										— Where Are You Now</a>
+								</li>
+								<li class="last-tracks__track">
+									<a href="files/01.mp3">Zedd, Bright Lights — Follow You Down
+									</a>
+								</li>
+							</ol>
 							<div class="last-tracks__follow-row">
 								<div class="last-tracks__totle-follow">Follow me:</div>
 								<div class="last-tracks__services">
@@ -241,128 +251,128 @@
 						</div>
 						<div class="gallery__picture gallery__picture_tow-row">
 							<picture><source srcset="img/galeru/Rectangl4.webp" type="image/webp"><img src="img/galeru/Rectangl4.jpg" alt="foto"></picture>
-							<span class="gallery__text"">EDC Las Vegas Mainstage</span>
+							<span class="gallery__text">EDC Las Vegas Mainstage</span>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class=" tickets">
-								<div class="tickets__container">
-									<!-- Оболочка слайдера -->
-									<div class="tickets__slider swiper">
-										<!-- Двигающееся часть слайдера -->
-										<div class="tickets__wrapper swiper-wrapper">
-											<!-- Слайд -->
-											<div class="tickets__slide swiper-slide">
-												<article class="tickets__column">
-													<div class="tickets__image">
-														<picture><source srcset="img/tickets/Rectangle1.webp" type="image/webp"><img src="img/tickets/Rectangle1.jpg" alt="foto"></picture>
-													</div>
-													<div class="tickets__content">
-														<h4 class="tickets__title">Chandler, AZ</h4>
-														<div class="tickets__text">
-															<p>The Park at Wild Horse</p>
-														</div>
-													</div>
-													<div class="tickets__bottom">
-														<div class="tickets__data">Apr 02 2021</div>
-														<a href="" class="tickets__ticket">tickets</a>
-													</div>
-												</article>
-											</div>
-											<div class="tickets__slide swiper-slide">
-												<article class="tickets__column">
-													<div class="tickets__image">
-														<picture><source srcset="img/tickets/Rectangle2.webp" type="image/webp"><img src="img/tickets/Rectangle2.jpg" alt="foto"></picture>
-													</div>
-													<div class="tickets__content">
-														<h4 class="tickets__title">Ibiza, IBZ</h4>
-														<div class="tickets__text">
-															<p>Swag Ibiza Club</p>
-														</div>
-													</div>
-													<div class="tickets__bottom">
-														<div class="tickets__data">Jul 08 2021</div>
-														<a href="" class="tickets__ticket">tickets</a>
-													</div>
-												</article>
-											</div>
-											<div class="tickets__slide swiper-slide">
-												<article class="tickets__column">
-													<div class="tickets__image">
-														<picture><source srcset="img/tickets/Rectangle3.webp" type="image/webp"><img src="img/tickets/Rectangle3.jpg" alt="foto"></picture>
-													</div>
-													<div class="tickets__content">
-														<h4 class="tickets__title">Ibiza, IBZ</h4>
-														<div class="tickets__text">
-															<p>El Swing Ibiza</p>
-														</div>
-													</div>
-													<div class="tickets__bottom">
-														<div class="tickets__data">Jul 10 2021</div>
-														<a href="" class="tickets__ticket">tickets</a>
-													</div>
-												</article>
-											</div>
-											<div class="tickets__slide swiper-slide">
-												<article class="tickets__column">
-													<div class="tickets__image">
-														<picture><source srcset="img/tickets/Rectangle3.webp" type="image/webp"><img src="img/tickets/Rectangle3.jpg" alt="foto"></picture>
-													</div>
-													<div class="tickets__content">
-														<h4 class="tickets__title">Ibiza, IBZ</h4>
-														<div class="tickets__text">
-															<p>El Swing Ibiza</p>
-														</div>
-													</div>
-													<div class="tickets__bottom">
-														<div class="tickets__data">Jul 10 2021</div>
-														<a href="" class="tickets__ticket">tickets</a>
-													</div>
-												</article>
-											</div>
-											<div class="tickets__slide swiper-slide">
-												<article class="tickets__column">
-													<div class="tickets__image">
-														<picture><source srcset="img/tickets/Rectangle3.webp" type="image/webp"><img src="img/tickets/Rectangle3.jpg" alt="foto"></picture>
-													</div>
-													<div class="tickets__content">
-														<h4 class="tickets__title">Ibiza, IBZ</h4>
-														<div class="tickets__text">
-															<p>El Swing Ibiza</p>
-														</div>
-													</div>
-													<div class="tickets__bottom">
-														<div class="tickets__data">Jul 10 2021</div>
-														<a href="" class="tickets__ticket">tickets</a>
-													</div>
-												</article>
-											</div>
-											<div class="tickets__slide swiper-slide">
-												<article class="tickets__column">
-													<div class="tickets__image">
-														<picture><source srcset="img/tickets/Rectangle3.webp" type="image/webp"><img src="img/tickets/Rectangle3.jpg" alt="foto"></picture>
-													</div>
-													<div class="tickets__content">
-														<h4 class="tickets__title">Ibiza, IBZ</h4>
-														<div class="tickets__text">
-															<p>El Swing Ibiza</p>
-														</div>
-													</div>
-													<div class="tickets__bottom">
-														<div class="tickets__data">Jul 10 2021</div>
-														<a href="" class="tickets__ticket">tickets</a>
-													</div>
-												</article>
-											</div>
-										</div>
-										<!-- навигация (влево/вправо) -->
-										<button type="button" class="swiper-button-prev"></button>
-										<button type="button" class="swiper-button-next"></button>
+				<div class="tickets__container">
+					<!-- Оболочка слайдера -->
+					<div class="tickets__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="tickets__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="tickets__slide swiper-slide">
+								<article class="tickets__column">
+									<div class="tickets__image">
+										<picture><source srcset="img/tickets/Rectangle1.webp" type="image/webp"><img src="img/tickets/Rectangle1.jpg" alt="foto"></picture>
 									</div>
-								</div>
+									<div class="tickets__content">
+										<h4 class="tickets__title">Chandler, AZ</h4>
+										<div class="tickets__text">
+											<p>The Park at Wild Horse</p>
+										</div>
+									</div>
+									<div class="tickets__bottom">
+										<div class="tickets__data">Apr 02 2021</div>
+										<a href="" class="tickets__ticket">tickets</a>
+									</div>
+								</article>
+							</div>
+							<div class="tickets__slide swiper-slide">
+								<article class="tickets__column">
+									<div class="tickets__image">
+										<picture><source srcset="img/tickets/Rectangle2.webp" type="image/webp"><img src="img/tickets/Rectangle2.jpg" alt="foto"></picture>
+									</div>
+									<div class="tickets__content">
+										<h4 class="tickets__title">Ibiza, IBZ</h4>
+										<div class="tickets__text">
+											<p>Swag Ibiza Club</p>
+										</div>
+									</div>
+									<div class="tickets__bottom">
+										<div class="tickets__data">Jul 08 2021</div>
+										<a href="" class="tickets__ticket">tickets</a>
+									</div>
+								</article>
+							</div>
+							<div class="tickets__slide swiper-slide">
+								<article class="tickets__column">
+									<div class="tickets__image">
+										<picture><source srcset="img/tickets/Rectangle3.webp" type="image/webp"><img src="img/tickets/Rectangle3.jpg" alt="foto"></picture>
+									</div>
+									<div class="tickets__content">
+										<h4 class="tickets__title">Ibiza, IBZ</h4>
+										<div class="tickets__text">
+											<p>El Swing Ibiza</p>
+										</div>
+									</div>
+									<div class="tickets__bottom">
+										<div class="tickets__data">Jul 10 2021</div>
+										<a href="" class="tickets__ticket">tickets</a>
+									</div>
+								</article>
+							</div>
+							<div class="tickets__slide swiper-slide">
+								<article class="tickets__column">
+									<div class="tickets__image">
+										<picture><source srcset="img/tickets/Rectangle3.webp" type="image/webp"><img src="img/tickets/Rectangle3.jpg" alt="foto"></picture>
+									</div>
+									<div class="tickets__content">
+										<h4 class="tickets__title">Ibiza, IBZ</h4>
+										<div class="tickets__text">
+											<p>El Swing Ibiza</p>
+										</div>
+									</div>
+									<div class="tickets__bottom">
+										<div class="tickets__data">Jul 10 2021</div>
+										<a href="" class="tickets__ticket">tickets</a>
+									</div>
+								</article>
+							</div>
+							<div class="tickets__slide swiper-slide">
+								<article class="tickets__column">
+									<div class="tickets__image">
+										<picture><source srcset="img/tickets/Rectangle3.webp" type="image/webp"><img src="img/tickets/Rectangle3.jpg" alt="foto"></picture>
+									</div>
+									<div class="tickets__content">
+										<h4 class="tickets__title">Ibiza, IBZ</h4>
+										<div class="tickets__text">
+											<p>El Swing Ibiza</p>
+										</div>
+									</div>
+									<div class="tickets__bottom">
+										<div class="tickets__data">Jul 10 2021</div>
+										<a href="" class="tickets__ticket">tickets</a>
+									</div>
+								</article>
+							</div>
+							<div class="tickets__slide swiper-slide">
+								<article class="tickets__column">
+									<div class="tickets__image">
+										<picture><source srcset="img/tickets/Rectangle3.webp" type="image/webp"><img src="img/tickets/Rectangle3.jpg" alt="foto"></picture>
+									</div>
+									<div class="tickets__content">
+										<h4 class="tickets__title">Ibiza, IBZ</h4>
+										<div class="tickets__text">
+											<p>El Swing Ibiza</p>
+										</div>
+									</div>
+									<div class="tickets__bottom">
+										<div class="tickets__data">Jul 10 2021</div>
+										<a href="" class="tickets__ticket">tickets</a>
+									</div>
+								</article>
+							</div>
 						</div>
+						<!-- навигация (влево/вправо) -->
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+					</div>
+				</div>
+			</div>
 
 		</main>
 		<footer class="footer">
@@ -416,8 +426,54 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220628070145"></script>
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220628070145"></script>
+	<script src="js/app.min.js?_v=20220629192117"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220629192117"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220629192117"></script>
+	<script>
+		$(document).ready(function() {
+			var audio;
+			var playlist;
+			var tracks;
+			var current;
+
+			init();
+
+			function init() {
+				current = 0;
+				audio = $('#audio');
+				playlist = $('#playlist');
+				tracks = playlist.find('li a');
+				len = tracks.length - 1;
+				audio[0].volume = .80;
+				playlist.find('a').click(function(e) {
+					e.preventDefault();
+					link = $(this);
+					current = link.parent().index();
+					run(link, audio[0]);
+				});
+				audio[0].addEventListener('ended', function(e) {
+					current++;
+					if (current > len) {
+						current = 0;
+						link = playlist.find('a')[0];
+					} else {
+						link = playlist.find('a')[current];
+					}
+					run($(link), audio[0]);
+				});
+			}
+
+			function run(link, player) {
+				player.src = link.attr('href');
+				par = link.parent();
+				par.addClass('active').siblings().removeClass('active');
+				audio[0].load();
+				audio[0].play();
+			}
+		});
+	</script>
+
+
 </body>
 
 </html>
